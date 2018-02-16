@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/simulation/modelsim
+vidct16
+Z1 !s110 1511387807
+!i10b 1
+!s100 JP2EfhO0B;9JYDIF46SWS0
+IL=nZhPcgTJ_QlIUB:18PL3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1511387496
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1511387806.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16
+Z6 tCvgOpt 0
+vidct16_test
+R1
+!i10b 1
+!s100 DSdaIiJ9mRS^0em3_eN<D3
+I>7OEG`PjWCL>UaP3oimng0
+R2
+R0
+w1511387765
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16_test.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16_test.v
+L0 29
+R3
+r1
+!s85 0
+31
+Z7 !s108 1511387807.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct16_test.v|
+!i113 1
+R4
+R5
+R6
+vidct4
+R1
+!i10b 1
+!s100 3C=1BXH[N0>N6cYOcHLKK3
+IkDV0DURVG098i67=G=TXF3
+R2
+R0
+w1511383444
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct4.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct4.v|
+!i113 1
+R4
+R5
+R6
+vidct8
+R1
+!i10b 1
+!s100 eP[UAnfFiBdl0AK[kzXRM3
+Ib;_@61[m]CXX9S4YC09@^1
+R2
+R0
+w1511385647
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct8.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct16/idct8.v|
+!i113 1
+R4
+R5
+R6

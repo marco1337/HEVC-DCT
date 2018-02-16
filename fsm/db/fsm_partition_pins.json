@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "load_1dct",
+					"strict" : false
+				},
+				{
+					"name" : "load_trans",
+					"strict" : false
+				},
+				{
+					"name" : "unload_trans",
+					"strict" : false
+				},
+				{
+					"name" : "load_2dct",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

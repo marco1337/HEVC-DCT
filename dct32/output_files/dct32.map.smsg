@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at shift_add16.v(39): always construct contains both blocking and non-blocking assignments File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add16.v Line: 39
+Warning (10268): Verilog HDL information at shift_add32.v(76): always construct contains both blocking and non-blocking assignments File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add32.v Line: 76

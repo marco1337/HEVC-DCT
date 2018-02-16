@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/simulation/modelsim
+vidct4
+Z1 !s110 1511383392
+!i10b 1
+!s100 3C=1BXH[N0>N6cYOcHLKK3
+Ini[[nU<D6DJ>TL?<kRK^71
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1511383247
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1511383392.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4
+Z7 tCvgOpt 0
+vidct4_test
+R1
+!i10b 1
+!s100 kgCi2EK>edSAB=`8e486F2
+I47__7c@<`iKnT=^25Sl@>0
+R2
+R0
+w1511383168
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4_test.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4_test.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct4/idct4_test.v|
+!i113 1
+R5
+R6
+R7

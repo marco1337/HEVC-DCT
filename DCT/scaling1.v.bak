@@ -1,0 +1,6 @@
+module scaling1
+(
+	input wire [1:0] size,
+	input wire operation,
+	input
+)

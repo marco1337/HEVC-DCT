@@ -1,0 +1,7 @@
+module idct8 
+#(
+	parameter WIDHT_X = 16,
+	parameter WIDTH_Y = 22
+)
+
+

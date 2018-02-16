@@ -1,0 +1,58 @@
+counter
+	#(
+		.WIDHT (8)
+	)
+	counter1
+	(
+		.clk (clk),
+		.rst (rst_counter),
+		.load (load),
+		.n (n),
+		.last (last)
+	);
+	
+	always @(posedge clk)
+	begin
+		
+		if (rst) begin
+			state <= IDLE;
+		end
+		else begin
+			state <= state_next;
+		end
+		
+	end
+	
+	always @(*)
+	begin
+	
+		state_next = state;
+		
+		case(state)
+			IDLE: 
+			if (load) begin
+				state_next = ONE_DCT;
+			end
+			
+			ONE_DCT: 
+			if (last) begin
+				state_next = LOAD_TRANS;
+			end
+			
+			LOAD_TRANS:
+			if (last) begin
+				state_next = UNLOAD_TRANS;
+			end
+			
+			UNLOAD_TRANS:
+			if (last) begin
+				state_next = TWO_DCT;
+			end
+			
+			TWO_DCT: 
+			if (last) begin
+				state_next = IDLE;
+			end
+		endcase
+	
+	end

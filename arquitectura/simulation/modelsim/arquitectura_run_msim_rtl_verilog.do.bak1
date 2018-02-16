@@ -1,0 +1,20 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/arquitectura.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/bloque.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/dct8puntos.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/dct16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/dct32.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/shift_add8.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/shift_add16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/shift_add32.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/idct4.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/idct8.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/idct16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/arquitectura/idct32.v}
+

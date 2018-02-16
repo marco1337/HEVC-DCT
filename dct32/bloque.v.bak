@@ -1,0 +1,67 @@
+module bloque
+#(
+parameter	WIDTH_X = 16,
+parameter	WIDTH_Y = 22
+)
+(
+	input wire[WIDTH_X-1:0] x0,
+	input wire[WIDTH_X-1:0] x1,
+	input wire[WIDTH_X-1:0] x2,
+	input wire[WIDTH_X-1:0] x3,
+	input wire clk,rst_b,
+	input wire load,
+	output reg [WIDTH_Y-1:0] y0,
+	output reg [WIDTH_Y-1:0] y1,
+	output reg [WIDTH_Y-1:0] y2,
+	output reg [WIDTH_Y-1:0] y3
+	
+);
+	reg[WIDTH_X-1:0] a0_reg;
+	reg[WIDTH_X-1:0] a1_reg;
+	reg[WIDTH_X-1:0] a2_reg;
+	reg[WIDTH_X-1:0] a3_reg;
+	
+	reg[WIDTH_X-1:0] a0;
+	reg[WIDTH_X-1:0] a1;
+	reg[WIDTH_X-1:0] a2;
+	reg[WIDTH_X-1:0] a3;
+	
+	wire[WIDTH_Y-1:0] y0_d;
+	wire[WIDTH_Y-1:0] y1_d;
+	wire[WIDTH_Y-1:0] y2_d;
+	wire[WIDTH_Y-1:0] y3_d;
+	
+	always @ (posedge clk or negedge rst_b)
+	begin
+		if(!rst_b) begin
+				y0 <= 0;
+				y1 <= 0;
+				y2 <= 0;
+				y3 <= 0;
+				a0_reg <= 0;
+				a1_reg <= 0;
+				a2_reg <= 0;
+				a3_reg <= 0;
+		end
+		else begin
+				y0 <= y0_d;
+				y1 <= y1_d;
+				y2 <= y2_d;
+				y3 <= y3_d;
+				if (load) begin
+					a0_reg <= x0;
+					a1_reg <= x1;
+					a2_reg <= x2;
+					a3_reg <= x3;
+				end
+		end
+	end
+	
+
+	assign y0_d = {a0_reg + a3_reg,6'b000000} + {a1_reg + a2_reg, 6'b000000};
+	assign y1_d = {a0_reg - a3_reg,6'b000000} + {a1_reg - a2_reg, 6'b000000};
+	assign y2_d = {a0_reg + a3_reg,6'b000000} - {a1_reg + a2_reg, 6'b000000};
+	assign y3_d = {a0_reg - a3_reg,6'b000000} - {a1_reg - a2_reg, 6'b000000};
+
+	endmodule
+	

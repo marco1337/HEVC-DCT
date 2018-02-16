@@ -1,0 +1,8 @@
+
+State Machine - |arquitectura|fsm:fsm1|state
+Name state.UNLOAD_TRANS state.LOAD_TRANS state.ONE_DCT state.IDLE state.TWO_DCT 
+state.IDLE 0 0 0 0 0 
+state.ONE_DCT 0 0 1 1 0 
+state.LOAD_TRANS 0 1 0 1 0 
+state.UNLOAD_TRANS 1 0 0 1 0 
+state.TWO_DCT 0 0 0 1 1 

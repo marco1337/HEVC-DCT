@@ -1,0 +1,88 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do dct8puntos_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct8puntos.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:35:45 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct8puntos.v 
+# -- Compiling module dct8puntos
+# 
+# Top level modules:
+# 	dct8puntos
+# End time: 16:35:45 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:35:46 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v 
+# -- Compiling module bloque
+# 
+# Top level modules:
+# 	bloque
+# End time: 16:35:46 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/shift_add8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:35:46 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/shift_add8.v 
+# -- Compiling module shift_add8
+# 
+# Top level modules:
+# 	shift_add8
+# End time: 16:35:46 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct_8puntos_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:35:46 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct_8puntos_test.v 
+# -- Compiling module dct_8puntos_test
+# 
+# Top level modules:
+# 	dct_8puntos_test
+# End time: 16:35:46 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  dct_8puntos_test
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" dct_8puntos_test 
+# Start time: 16:35:46 on Nov 26,2017
+# Loading work.dct_8puntos_test
+# Loading work.dct8puntos
+# Loading work.bloque
+# Loading work.shift_add8
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct8puntos.v(58): [PCDPC] - Port size (10) does not match connection size (19) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_8puntos_test/dct8puntos_inst/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct8puntos.v(58): [PCDPC] - Port size (10) does not match connection size (19) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_8puntos_test/dct8puntos_inst/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct8puntos.v(58): [PCDPC] - Port size (10) does not match connection size (19) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_8puntos_test/dct8puntos_inst/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct8puntos.v(58): [PCDPC] - Port size (10) does not match connection size (19) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_8puntos_test/dct8puntos_inst/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/bloque.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+#                    4 << Coming out of reset >>
+#                    4 << Loading value 1 >>
+#                    8 << Loading value 2 >>
+#                   12 << Loading value 2 >>
+#                   28 << Simulation Complete >>
+# ** Note: $finish    : C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct_8puntos_test.v(83)
+#    Time: 28 ns  Iteration: 0  Instance: /dct_8puntos_test
+# 1
+# Break in Module dct_8puntos_test at C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct_8puntos/dct_8puntos_test.v line 83
+# End time: 16:36:09 on Nov 26,2017, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 4

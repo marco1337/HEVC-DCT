@@ -1,0 +1,19 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/bloque.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/dct8puntos.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/dct16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/dct32.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/shift_add8.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/shift_add16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/shift_add32.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/transpuesta.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/dct.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/counter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/DCT/fsm.v}
+

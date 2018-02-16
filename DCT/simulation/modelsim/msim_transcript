@@ -1,0 +1,569 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do dct_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:35 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v 
+# -- Compiling module bloque
+# 
+# Top level modules:
+# 	bloque
+# End time: 16:12:35 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:35 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v 
+# -- Compiling module dct8puntos
+# 
+# Top level modules:
+# 	dct8puntos
+# End time: 16:12:35 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:35 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v 
+# -- Compiling module dct16
+# 
+# Top level modules:
+# 	dct16
+# End time: 16:12:35 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:35 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v 
+# -- Compiling module dct32
+# 
+# Top level modules:
+# 	dct32
+# End time: 16:12:36 on Nov 26,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:36 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v 
+# -- Compiling module shift_add8
+# 
+# Top level modules:
+# 	shift_add8
+# End time: 16:12:36 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:36 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v 
+# -- Compiling module shift_add16
+# 
+# Top level modules:
+# 	shift_add16
+# End time: 16:12:36 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:36 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v 
+# -- Compiling module shift_add32
+# 
+# Top level modules:
+# 	shift_add32
+# End time: 16:12:36 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/transpuesta.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:36 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/transpuesta.v 
+# -- Compiling module transpuesta
+# 
+# Top level modules:
+# 	transpuesta
+# End time: 16:12:36 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:36 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v 
+# -- Compiling module dct
+# 
+# Top level modules:
+# 	dct
+# End time: 16:12:36 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:37 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 16:12:37 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:37 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v 
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+# End time: 16:12:37 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:37 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling1.v 
+# -- Compiling module scaling1
+# 
+# Top level modules:
+# 	scaling1
+# End time: 16:12:37 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:37 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling2.v 
+# -- Compiling module scaling2
+# 
+# Top level modules:
+# 	scaling2
+# End time: 16:12:37 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:37 on Nov 26,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct_test.v 
+# -- Compiling module dct_test
+# 
+# Top level modules:
+# 	dct_test
+# End time: 16:12:37 on Nov 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  dct_test
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" dct_test 
+# Start time: 16:12:37 on Nov 26,2017
+# Loading work.dct_test
+# Loading work.dct
+# Loading work.fsm
+# Loading work.counter
+# Loading work.dct32
+# Loading work.dct16
+# Loading work.dct8puntos
+# Loading work.bloque
+# Loading work.shift_add8
+# Loading work.shift_add16
+# Loading work.shift_add32
+# Loading work.scaling1
+# Loading work.transpuesta
+# Loading work.scaling2
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v(33): [PCDPC] - Port size (8) does not match connection size (7) for port 'count'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/fsm1/counter1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v(33): [PCDPC] - Port size (8) does not match connection size (32) for port 'n'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/fsm1/counter1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x8'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x9'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x10'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x11'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x12'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x13'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x14'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x15'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x8'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x9'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x10'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x11'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x12'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x13'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x14'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x15'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x16'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x17'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(25).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x18'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(26).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x19'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(27).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x20'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x21'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(29).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x22'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x23'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(31).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x24'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x25'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(33).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x26'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(34).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x27'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(35).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x28'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(36).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x29'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(37).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x30'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(38).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x31'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(39).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x8'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x9'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x10'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x11'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x12'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x13'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x14'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x15'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+#                    4 << Coming out of reset >>
+#                    4 << Loading value 0 >>
+#                  331 << Simulation Complete >>
+# ** Note: $finish    : C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct_test.v(281)
+#    Time: 331 ns  Iteration: 0  Instance: /dct_test
+# 1
+# Break in Module dct_test at C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct_test.v line 281
+add wave -position 4  sim:/dct_test/i1/dct32_etapa1/x0_reg
+add wave -position 5  sim:/dct_test/i1/dct32_etapa1/x1_reg
+add wave -position 6  sim:/dct_test/i1/dct32_etapa1/x2_reg
+add wave -position 7  sim:/dct_test/i1/dct32_etapa1/x3_reg
+add wave -position 8  sim:/dct_test/i1/dct32_etapa1/x4_reg
+add wave -position 9  sim:/dct_test/i1/dct32_etapa1/x5_reg
+add wave -position 10  sim:/dct_test/i1/dct32_etapa1/x6_reg
+add wave -position 11  sim:/dct_test/i1/dct32_etapa1/x7_reg
+add wave -position 12  sim:/dct_test/i1/dct32_etapa1/x8_reg
+add wave -position 13  sim:/dct_test/i1/dct32_etapa1/x9_reg
+add wave -position 14  sim:/dct_test/i1/dct32_etapa1/x10_reg
+restart
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v(33): [PCDPC] - Port size (8) does not match connection size (7) for port 'count'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/fsm1/counter1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v(33): [PCDPC] - Port size (8) does not match connection size (32) for port 'n'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/fsm1/counter1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x8'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x9'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x10'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x11'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x12'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x13'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x14'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (10) does not match connection size (21) for port 'x15'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (11) does not match connection size (21) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (12) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa1/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x8'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x9'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x10'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x11'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x12'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x13'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x14'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x15'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x16'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x17'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(25).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x18'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(26).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x19'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(27).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x20'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x21'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(29).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x22'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x23'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(31).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x24'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(32).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x25'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(33).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x26'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(34).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x27'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(35).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x28'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(36).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x29'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(37).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x30'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(38).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v(346): [PCDPC] - Port size (16) does not match connection size (21) for port 'x31'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(39).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x8'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x9'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x10'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x11'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x12'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x13'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x14'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v(184): [PCDPC] - Port size (17) does not match connection size (28) for port 'x15'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x4'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x5'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x6'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v(111): [PCDPC] - Port size (18) does not match connection size (28) for port 'x7'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x0'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x1'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x2'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+# ** Warning: (vsim-3015) C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v(62): [PCDPC] - Port size (19) does not match connection size (28) for port 'x3'. The port definition is at: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /dct_test/i1/dct32_etapa2/dct16_1/dct8puntos_1/dct4puntos_1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v
+run
+#                    0 << Starting the Simulation >>
+#                    4 << Coming out of reset >>
+#                    4 << Loading value 0 >>
+#                  331 << Simulation Complete >>
+# ** Note: $finish    : C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct_test.v(281)
+#    Time: 331 ns  Iteration: 0  Instance: /dct_test
+# 1
+# Break in Module dct_test at C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct_test.v line 281
+# End time: 16:16:19 on Nov 26,2017, Elapsed time: 0:03:42
+# Errors: 0, Warnings: 180

@@ -1,0 +1,59 @@
+module bloque
+#(
+parameter	WIDTH_X = 16,
+parameter	WIDTH_Y = 22
+)
+(
+	input wire[WIDTH_X-1:0] x0,
+	input wire[WIDTH_X-1:0] x1,
+	input wire[WIDTH_X-1:0] x2,
+	input wire[WIDTH_X-1:0] x3,
+	input wire clk,rst,
+	input wire load,
+	output reg [WIDTH_Y-1:0] y0,
+	output reg [WIDTH_Y-1:0] y1,
+	output reg [WIDTH_Y-1:0] y2,
+	output reg [WIDTH_Y-1:0] y3
+	
+);
+	reg[WIDTH_Y-1:0] y0_next;
+	reg[WIDTH_Y-1:0] y1_next;
+	reg[WIDTH_Y-1:0] y2_next;
+	reg[WIDTH_Y-1:0] y3_next;
+	
+
+	
+	always @ (posedge clk)
+	begin
+		if(rst) begin
+				y0 <= 0;
+				y1 <= 0;
+				y2 <= 0;
+				y3 <= 0;
+		end
+		else begin
+				y0 <= y0_next;
+				y1 <= y1_next;
+				y2 <= y2_next;
+				y3 <= y3_next;
+		end
+	end
+	
+	
+	always @ (load,x0,x1,x2,x3,y0,y1,y2,y3)
+	begin
+		if(load) begin
+			y0_next <= {x0 + x3,6'b000000} + {x1 + x2, 6'b000000};
+			y1_next <= {x0 - x3,6'b000000} + {x1 - x2, 6'b000000};
+			y2_next <= {x0 + x3,6'b000000} - {x1 + x2, 6'b000000};
+			y3_next <= {x0 - x3,6'b000000} - {x1 - x2, 6'b000000};
+		end
+		else begin
+			y0_next <= y0;
+			y1_next <= y1;
+			y2_next <= y2;
+			y3_next <= y3;
+		end
+	end	
+	
+	endmodule

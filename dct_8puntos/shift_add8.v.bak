@@ -1,0 +1,7 @@
+module dct8puntos
+#(
+parameter	WIDTH = 19
+)
+(
+	input wire
+)

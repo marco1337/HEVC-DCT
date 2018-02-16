@@ -1,0 +1,71 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do idct8_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:06 on Nov 22,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct8.v 
+# -- Compiling module idct8
+# 
+# Top level modules:
+# 	idct8
+# End time: 16:22:06 on Nov 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:06 on Nov 22,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct4.v 
+# -- Compiling module idct4
+# 
+# Top level modules:
+# 	idct4
+# End time: 16:22:06 on Nov 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct8_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:06 on Nov 22,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8" C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct8_test.v 
+# -- Compiling module idct8_test
+# 
+# Top level modules:
+# 	idct8_test
+# End time: 16:22:06 on Nov 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  idct8_test
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" idct8_test 
+# Start time: 16:22:06 on Nov 22,2017
+# Loading work.idct8_test
+# Loading work.idct8
+# Loading work.idct4
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 << Starting the Simulation >>
+#                    4 << Coming out of reset >>
+#                    4 << Loading value 1 >>
+#                    8 << Loading value 2 >>
+#                   12 << Loading value 3 >>
+#                   16 << Loading value 4 >>
+#                   20 << Loading value 5 >>
+#                   24 << Simulation Complete >>
+# ** Note: $finish    : C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct8_test.v(105)
+#    Time: 24 ns  Iteration: 0  Instance: /idct8_test
+# 1
+# Break in Module idct8_test at C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/idct8/idct8_test.v line 105
+# End time: 16:22:38 on Nov 22,2017, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 0

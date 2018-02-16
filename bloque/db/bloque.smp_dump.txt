@@ -1,0 +1,6 @@
+
+State Machine - |bloque|state_reg
+Name state_reg.00 state_reg.10 state_reg.01 
+state_reg.00 0 0 0 
+state_reg.01 1 0 1 
+state_reg.10 1 1 0 

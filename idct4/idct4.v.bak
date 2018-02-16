@@ -1,0 +1,4 @@
+module idct(
+	parameter WIDTH_X = 16,
+	parameter WIDTH_Y = 22
+)

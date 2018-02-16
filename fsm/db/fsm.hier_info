@@ -1,0 +1,55 @@
+|fsm
+clk => clk.IN1
+rst => rst.IN1
+load => load.IN1
+load_1dct <= load_1dct.DB_MAX_OUTPUT_PORT_TYPE
+load_trans <= load_trans.DB_MAX_OUTPUT_PORT_TYPE
+unload_trans <= unload_trans.DB_MAX_OUTPUT_PORT_TYPE
+load_2dct <= load_2dct.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fsm|counter:counter1
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+clk => count[4]~reg0.CLK
+clk => count[5]~reg0.CLK
+clk => count[6]~reg0.CLK
+clk => count[7]~reg0.CLK
+rst => always0.IN1
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+load => count.OUTPUTSELECT
+n[0] => LessThan0.IN8
+n[0] => Add1.IN16
+n[1] => LessThan0.IN7
+n[1] => Add1.IN15
+n[2] => LessThan0.IN6
+n[2] => Add1.IN14
+n[3] => LessThan0.IN5
+n[3] => Add1.IN13
+n[4] => LessThan0.IN4
+n[4] => Add1.IN12
+n[5] => LessThan0.IN3
+n[5] => Add1.IN11
+n[6] => LessThan0.IN2
+n[6] => Add1.IN10
+n[7] => LessThan0.IN1
+n[7] => Add1.IN9
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= count[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+last <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

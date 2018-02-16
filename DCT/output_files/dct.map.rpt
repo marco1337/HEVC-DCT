@@ -1,0 +1,1086 @@
+Analysis & Synthesis report for dct
+Sun Nov 26 15:42:57 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |dct|fsm:fsm1|state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |dct
+ 13. Parameter Settings for User Entity Instance: fsm:fsm1|counter:counter1
+ 14. Parameter Settings for User Entity Instance: dct32:dct32_etapa1
+ 15. Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1
+ 16. Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1
+ 17. Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1
+ 18. Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1
+ 19. Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|shift_add16:shift_add16_1
+ 20. Parameter Settings for User Entity Instance: dct32:dct32_etapa1|shift_add32:shift_add32_1
+ 21. Parameter Settings for User Entity Instance: scaling1:st1
+ 22. Parameter Settings for User Entity Instance: transpuesta:transpuesta0
+ 23. Parameter Settings for User Entity Instance: dct32:dct32_etapa2
+ 24. Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1
+ 25. Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1
+ 26. Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1
+ 27. Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1
+ 28. Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|shift_add16:shift_add16_1
+ 29. Parameter Settings for User Entity Instance: dct32:dct32_etapa2|shift_add32:shift_add32_1
+ 30. Parameter Settings for User Entity Instance: scaling2:st2
+ 31. Port Connectivity Checks: "scaling2:st2"
+ 32. Port Connectivity Checks: "dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1"
+ 33. Port Connectivity Checks: "dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1"
+ 34. Port Connectivity Checks: "dct32:dct32_etapa2|dct16:dct16_1"
+ 35. Port Connectivity Checks: "dct32:dct32_etapa2"
+ 36. Port Connectivity Checks: "transpuesta:transpuesta0"
+ 37. Port Connectivity Checks: "dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1"
+ 38. Port Connectivity Checks: "dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1"
+ 39. Port Connectivity Checks: "dct32:dct32_etapa1|dct16:dct16_1"
+ 40. Port Connectivity Checks: "fsm:fsm1|counter:counter1"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+ 44. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Nov 26 15:42:55 2017       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; dct                                         ;
+; Top-level Entity Name           ; dct                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 20768                                       ;
+; Total pins                      ; 805                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; dct                ; dct                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.16        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  15.9%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+; bloque.v                         ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v      ;         ;
+; dct8puntos.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v  ;         ;
+; dct16.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v       ;         ;
+; dct32.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v       ;         ;
+; shift_add8.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v  ;         ;
+; shift_add16.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v ;         ;
+; shift_add32.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v ;         ;
+; transpuesta.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/transpuesta.v ;         ;
+; dct.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v         ;         ;
+; counter.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v     ;         ;
+; fsm.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v         ;         ;
+; scaling1.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling1.v    ;         ;
+; scaling2.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling2.v    ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 26995     ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 37238     ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 1022      ;
+;     -- 5 input functions                    ; 10        ;
+;     -- 4 input functions                    ; 8         ;
+;     -- <=3 input functions                  ; 36198     ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 20768     ;
+;                                             ;           ;
+; I/O pins                                    ; 805       ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 20768     ;
+; Total fan-out                               ; 233023    ;
+; Average fan-out                             ; 3.91      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Entity Name ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+-------------+--------------+
+; |dct                                  ; 37238 (0)           ; 20768 (0)                 ; 0                 ; 0          ; 805  ; 0            ; |dct                                                                                  ; dct         ; work         ;
+;    |dct32:dct32_etapa1|               ; 14869 (320)         ; 1775 (608)                ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa1                                                               ; dct32       ; work         ;
+;       |dct16:dct16_1|                 ; 3627 (176)          ; 863 (336)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa1|dct16:dct16_1                                                 ; dct16       ; work         ;
+;          |dct8puntos:dct8puntos_1|    ; 958 (96)            ; 375 (184)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1                         ; dct8puntos  ; work         ;
+;             |bloque:dct4puntos_1|     ; 245 (245)           ; 115 (115)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1     ; bloque      ; work         ;
+;             |shift_add8:shift_add8_1| ; 617 (617)           ; 76 (76)                   ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1 ; shift_add8  ; work         ;
+;          |shift_add16:shift_add16_1|  ; 2493 (2493)         ; 152 (152)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa1|dct16:dct16_1|shift_add16:shift_add16_1                       ; shift_add16 ; work         ;
+;       |shift_add32:shift_add32_1|     ; 10922 (10922)       ; 304 (304)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa1|shift_add32:shift_add32_1                                     ; shift_add32 ; work         ;
+;    |dct32:dct32_etapa2|               ; 21311 (545)         ; 2596 (1056)               ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa2                                                               ; dct32       ; work         ;
+;       |dct16:dct16_1|                 ; 5189 (288)          ; 1236 (560)                ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa2|dct16:dct16_1                                                 ; dct16       ; work         ;
+;          |dct8puntos:dct8puntos_1|    ; 1381 (152)          ; 524 (296)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1                         ; dct8puntos  ; work         ;
+;             |bloque:dct4puntos_1|     ; 355 (355)           ; 152 (152)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1     ; bloque      ; work         ;
+;             |shift_add8:shift_add8_1| ; 874 (874)           ; 76 (76)                   ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1 ; shift_add8  ; work         ;
+;          |shift_add16:shift_add16_1|  ; 3520 (3520)         ; 152 (152)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa2|dct16:dct16_1|shift_add16:shift_add16_1                       ; shift_add16 ; work         ;
+;       |shift_add32:shift_add32_1|     ; 15577 (15577)       ; 304 (304)                 ; 0                 ; 0          ; 0    ; 0            ; |dct|dct32:dct32_etapa2|shift_add32:shift_add32_1                                     ; shift_add32 ; work         ;
+;    |fsm:fsm1|                         ; 27 (16)             ; 13 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |dct|fsm:fsm1                                                                         ; fsm         ; work         ;
+;       |counter:counter1|              ; 11 (11)             ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |dct|fsm:fsm1|counter:counter1                                                        ; counter     ; work         ;
+;    |scaling2:st2|                     ; 512 (512)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |dct|scaling2:st2                                                                     ; scaling2    ; work         ;
+;    |transpuesta:transpuesta0|         ; 519 (519)           ; 16384 (16384)             ; 0                 ; 0          ; 0    ; 0            ; |dct|transpuesta:transpuesta0                                                         ; transpuesta ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------+
+; State Machine - |dct|fsm:fsm1|state                                                                     ;
++--------------------+--------------------+------------------+---------------+------------+---------------+
+; Name               ; state.UNLOAD_TRANS ; state.LOAD_TRANS ; state.ONE_DCT ; state.IDLE ; state.TWO_DCT ;
++--------------------+--------------------+------------------+---------------+------------+---------------+
+; state.IDLE         ; 0                  ; 0                ; 0             ; 0          ; 0             ;
+; state.ONE_DCT      ; 0                  ; 0                ; 1             ; 1          ; 0             ;
+; state.LOAD_TRANS   ; 0                  ; 1                ; 0             ; 1          ; 0             ;
+; state.UNLOAD_TRANS ; 1                  ; 0                ; 0             ; 1          ; 0             ;
+; state.TWO_DCT      ; 0                  ; 0                ; 0             ; 1          ; 1             ;
++--------------------+--------------------+------------------+---------------+------------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                      ;
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+; Register name                                                                         ; Reason for Removal                                                              ;
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1|y0[1..5] ; Stuck at GND due to stuck port data_in                                          ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1|y2[1,2]  ; Stuck at GND due to stuck port data_in                                          ;
+; dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b3_reg[27]                   ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b3_reg[20]                   ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1|y2[3]    ; Stuck at GND due to stuck port data_in                                          ;
+; dct32:dct32_etapa2|b15_reg[27]                                                        ; Lost fanout                                                                     ;
+; dct32:dct32_etapa2|dct16:dct16_1|b7_reg[27]                                           ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|b15_reg[20]                                                        ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|dct16:dct16_1|b7_reg[20]                                           ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1|y2[4]    ; Stuck at GND due to stuck port data_in                                          ;
+; dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b2_reg[27]                   ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b2_reg[20]                   ; Lost fanout                                                                     ;
+; dct32:dct32_etapa2|b14_reg[27]                                                        ; Lost fanout                                                                     ;
+; dct32:dct32_etapa2|dct16:dct16_1|b6_reg[27]                                           ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|b14_reg[20]                                                        ; Lost fanout                                                                     ;
+; dct32:dct32_etapa1|dct16:dct16_1|b6_reg[20]                                           ; Lost fanout                                                                     ;
+; dct32:dct32_etapa2|b0_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b0_reg[16]                                       ;
+; dct32:dct32_etapa2|b1_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b1_reg[16]                                       ;
+; dct32:dct32_etapa2|b2_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b2_reg[16]                                       ;
+; dct32:dct32_etapa2|b3_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b3_reg[16]                                       ;
+; dct32:dct32_etapa2|dct16:dct16_1|b0_reg[18..27]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b0_reg[17]                         ;
+; dct32:dct32_etapa2|dct16:dct16_1|b1_reg[18..27]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b1_reg[17]                         ;
+; dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b0_reg[19..27]               ; Merged with dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b0_reg[18] ;
+; dct32:dct32_etapa1|b0_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b0_reg[10]                                       ;
+; dct32:dct32_etapa1|b1_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b1_reg[10]                                       ;
+; dct32:dct32_etapa1|b2_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b2_reg[10]                                       ;
+; dct32:dct32_etapa1|b3_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b3_reg[10]                                       ;
+; dct32:dct32_etapa1|b4_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b4_reg[10]                                       ;
+; dct32:dct32_etapa1|b5_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b5_reg[10]                                       ;
+; dct32:dct32_etapa1|b6_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b6_reg[10]                                       ;
+; dct32:dct32_etapa1|b7_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b7_reg[10]                                       ;
+; dct32:dct32_etapa1|b8_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b8_reg[10]                                       ;
+; dct32:dct32_etapa1|b9_reg[9,11..20]                                                   ; Merged with dct32:dct32_etapa1|b9_reg[10]                                       ;
+; dct32:dct32_etapa1|b10_reg[9,11..20]                                                  ; Merged with dct32:dct32_etapa1|b10_reg[10]                                      ;
+; dct32:dct32_etapa1|b11_reg[9,11..20]                                                  ; Merged with dct32:dct32_etapa1|b11_reg[10]                                      ;
+; dct32:dct32_etapa1|b12_reg[9,11..20]                                                  ; Merged with dct32:dct32_etapa1|b12_reg[10]                                      ;
+; dct32:dct32_etapa1|b13_reg[9,11..20]                                                  ; Merged with dct32:dct32_etapa1|b13_reg[10]                                      ;
+; dct32:dct32_etapa1|b14_reg[9,11..19]                                                  ; Merged with dct32:dct32_etapa1|b14_reg[10]                                      ;
+; dct32:dct32_etapa1|b15_reg[9,11..19]                                                  ; Merged with dct32:dct32_etapa1|b15_reg[10]                                      ;
+; dct32:dct32_etapa1|dct16:dct16_1|b0_reg[11..20]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b0_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|b1_reg[11..20]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b1_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|b2_reg[11..20]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b2_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|b3_reg[11..20]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b3_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|b4_reg[11..20]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b4_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|b5_reg[11..20]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b5_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|b6_reg[11..19]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b6_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|b7_reg[11..19]                                       ; Merged with dct32:dct32_etapa1|dct16:dct16_1|b7_reg[10]                         ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b0_reg[12..20]               ; Merged with dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b0_reg[11] ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b1_reg[12..20]               ; Merged with dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b1_reg[11] ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b2_reg[12..19]               ; Merged with dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b2_reg[11] ;
+; dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b3_reg[12..19]               ; Merged with dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|b3_reg[11] ;
+; dct32:dct32_etapa2|b4_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b4_reg[16]                                       ;
+; dct32:dct32_etapa2|dct16:dct16_1|b2_reg[18..27]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b2_reg[17]                         ;
+; dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b1_reg[19..27]               ; Merged with dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b1_reg[18] ;
+; dct32:dct32_etapa2|dct16:dct16_1|b3_reg[18..27]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b3_reg[17]                         ;
+; dct32:dct32_etapa2|b5_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b5_reg[16]                                       ;
+; dct32:dct32_etapa2|dct16:dct16_1|b4_reg[18..27]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b4_reg[17]                         ;
+; dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b2_reg[19..26]               ; Merged with dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b2_reg[18] ;
+; dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b3_reg[19..26]               ; Merged with dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|b3_reg[18] ;
+; dct32:dct32_etapa2|b6_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b6_reg[16]                                       ;
+; dct32:dct32_etapa2|dct16:dct16_1|b5_reg[18..27]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b5_reg[17]                         ;
+; dct32:dct32_etapa2|b7_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b7_reg[16]                                       ;
+; dct32:dct32_etapa2|dct16:dct16_1|b6_reg[18..26]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b6_reg[17]                         ;
+; dct32:dct32_etapa2|b8_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b8_reg[16]                                       ;
+; dct32:dct32_etapa2|dct16:dct16_1|b7_reg[18..26]                                       ; Merged with dct32:dct32_etapa2|dct16:dct16_1|b7_reg[17]                         ;
+; dct32:dct32_etapa2|b9_reg[17..27]                                                     ; Merged with dct32:dct32_etapa2|b9_reg[16]                                       ;
+; dct32:dct32_etapa2|b10_reg[17..27]                                                    ; Merged with dct32:dct32_etapa2|b10_reg[16]                                      ;
+; dct32:dct32_etapa2|b11_reg[17..27]                                                    ; Merged with dct32:dct32_etapa2|b11_reg[16]                                      ;
+; dct32:dct32_etapa2|b12_reg[17..27]                                                    ; Merged with dct32:dct32_etapa2|b12_reg[16]                                      ;
+; dct32:dct32_etapa2|b13_reg[17..27]                                                    ; Merged with dct32:dct32_etapa2|b13_reg[16]                                      ;
+; dct32:dct32_etapa2|b14_reg[17..26]                                                    ; Merged with dct32:dct32_etapa2|b14_reg[16]                                      ;
+; dct32:dct32_etapa2|b15_reg[17..26]                                                    ; Merged with dct32:dct32_etapa2|b15_reg[16]                                      ;
+; fsm:fsm1|state~2                                                                      ; Lost fanout                                                                     ;
+; fsm:fsm1|state~3                                                                      ; Lost fanout                                                                     ;
+; Total Number of Removed Registers = 595                                               ;                                                                                 ;
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 20768 ;
+; Number of registers using Synchronous Clear  ; 20754 ;
+; Number of registers using Synchronous Load   ; 15863 ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 17980 ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                             ;
++--------------------+------------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width  ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                  ;
++--------------------+------------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------+
+; 3:1                ; 496 bits   ; 992 LEs       ; 0 LEs                ; 992 LEs                ; Yes        ; |dct|transpuesta:transpuesta0|temp[1][31][1]                                                ;
+; 5:1                ; 3 bits     ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |dct|transpuesta:transpuesta0|temp[0][0][1]                                                 ;
+; 5:1                ; 15376 bits ; 46128 LEs     ; 0 LEs                ; 46128 LEs              ; Yes        ; |dct|transpuesta:transpuesta0|temp[30][0][15]                                               ;
+; 6:1                ; 16 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |dct|transpuesta:transpuesta0|temp[0][31][9]                                                ;
+; 8:1                ; 2 bits     ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |dct|transpuesta:transpuesta0|temp[0][0][2]                                                 ;
+; 8:1                ; 2 bits     ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |dct|transpuesta:transpuesta0|temp[0][16][2]                                                ;
+; 8:1                ; 2 bits     ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |dct|transpuesta:transpuesta0|temp[0][16][3]                                                ;
+; 8:1                ; 487 bits   ; 2435 LEs      ; 974 LEs              ; 1461 LEs               ; Yes        ; |dct|transpuesta:transpuesta0|temp[0][15][8]                                                ;
+; 3:1                ; 1004 bits  ; 2008 LEs      ; 0 LEs                ; 2008 LEs               ; Yes        ; |dct|dct32:dct32_etapa2|x30_reg[1]                                                          ;
+; 3:1                ; 8 bits     ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |dct|fsm:fsm1|counter:counter1|count[1]                                                     ;
+; 11:1               ; 5 bits     ; 35 LEs        ; 20 LEs               ; 15 LEs                 ; No         ; |dct|fsm:fsm1|state                                                                         ;
+; 3:1                ; 584 bits   ; 1168 LEs      ; 0 LEs                ; 1168 LEs               ; Yes        ; |dct|dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1|a3_reg[0] ;
+; 4:1                ; 512 bits   ; 1024 LEs      ; 1024 LEs             ; 0 LEs                  ; No         ; |dct|scaling2:st2|y19[0]                                                                    ;
++--------------------+------------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |dct ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH_X        ; 9     ; Signed Integer                             ;
+; WIDTH_Y        ; 21    ; Signed Integer                             ;
+; WIDTH_X2       ; 16    ; Signed Integer                             ;
+; WIDTH_Y2       ; 28    ; Signed Integer                             ;
+; WIDTH_YOUT     ; 16    ; Signed Integer                             ;
+; IDLE           ; 000   ; Unsigned Binary                            ;
+; ONE_DCT        ; 001   ; Unsigned Binary                            ;
+; LOAD_TRANS     ; 010   ; Unsigned Binary                            ;
+; UNLOAD_TRANS   ; 011   ; Unsigned Binary                            ;
+; TWO_DCT        ; 100   ; Unsigned Binary                            ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fsm:fsm1|counter:counter1 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; WIDTH          ; 8     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa1 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH_X        ; 9     ; Signed Integer                         ;
+; WIDTH_Y        ; 21    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH_X        ; 10    ; Signed Integer                                       ;
+; WIDTH_Y        ; 21    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; WIDTH_X        ; 11    ; Signed Integer                                                               ;
+; WIDTH_Y        ; 21    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; WIDTH_X        ; 12    ; Signed Integer                                                                                   ;
+; WIDTH_Y        ; 21    ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 21    ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa1|dct16:dct16_1|shift_add16:shift_add16_1 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 21    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa1|shift_add32:shift_add32_1 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; WIDTH          ; 21    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: scaling1:st1 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 21    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: transpuesta:transpuesta0 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 21    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa2 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; WIDTH_X        ; 16    ; Signed Integer                         ;
+; WIDTH_Y        ; 28    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH_X        ; 17    ; Signed Integer                                       ;
+; WIDTH_Y        ; 28    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1 ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; WIDTH_X        ; 18    ; Signed Integer                                                               ;
+; WIDTH_Y        ; 28    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1 ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; WIDTH_X        ; 19    ; Signed Integer                                                                                   ;
+; WIDTH_Y        ; 28    ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; WIDTH          ; 28    ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa2|dct16:dct16_1|shift_add16:shift_add16_1 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 28    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dct32:dct32_etapa2|shift_add32:shift_add32_1 ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; WIDTH          ; 28    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: scaling2:st2 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 28    ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "scaling2:st2"                                                                              ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; y0[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y1[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y2[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y3[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y4[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y5[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y6[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y7[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y8[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y9[27..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y10[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y11[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y12[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y13[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y14[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y15[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y16[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y17[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y18[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y19[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y20[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y21[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y22[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y23[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y24[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y25[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y26[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y27[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y28[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y29[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y30[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y31[27..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1"                                                                                                     ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x0   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (19 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x1   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (19 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x2   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (19 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x3   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (19 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1"                                                                                                                          ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x0   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x1   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x2   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x3   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x4   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x5   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x6   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x7   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (18 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dct32:dct32_etapa2|dct16:dct16_1"                                                                                                                                                  ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x0   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x1   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x2   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x3   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x4   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x5   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x6   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x7   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x8   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x9   ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x10  ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x11  ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x12  ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x13  ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x14  ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x15  ; Input ; Warning  ; Input port expression (28 bits) is wider than the input port (17 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dct32:dct32_etapa2"                                                                                                                                                               ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x0   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x1   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x2   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x3   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x4   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x5   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x6   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x7   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x8   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x9   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x10  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x11  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x12  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x13  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x14  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x15  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x16  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x17  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x18  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x19  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x20  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x21  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x22  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x23  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x24  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x25  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x26  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x27  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x28  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x29  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x30  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x31  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (16 bits) it drives.  The 5 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "transpuesta:transpuesta0"                                                                  ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; y0[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y1[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y2[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y3[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y4[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y5[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y6[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y7[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y8[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y9[20..16]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y10[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y11[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y12[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y13[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y14[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y15[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y16[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y17[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y18[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y19[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y20[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y21[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y22[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y23[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y24[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y25[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y26[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y27[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y28[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y29[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y30[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y31[20..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1"                                                                                                     ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x0   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (12 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x1   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (12 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x2   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (12 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x3   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (12 bits) it drives.  The 9 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1"                                                                                                                          ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x0   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x1   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x2   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x3   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x4   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x5   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x6   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x7   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (11 bits) it drives.  The 10 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dct32:dct32_etapa1|dct16:dct16_1"                                                                                                                                                  ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                             ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; x0   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x1   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x2   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x3   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x4   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x5   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x6   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x7   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x8   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x9   ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x10  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x11  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x12  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x13  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x14  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; x15  ; Input ; Warning  ; Input port expression (21 bits) is wider than the input port (10 bits) it drives.  The 11 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fsm:fsm1|counter:counter1"                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; count   ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (7 bits) it drives; bit(s) "count[7..7]" have no fanouts                                                           ;
+; n       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; n[3..0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; n[5..4] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; n[7]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; n[6]    ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; last    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 20768                       ;
+;     ENA               ; 9                           ;
+;     ENA SCLR          ; 2108                        ;
+;     ENA SCLR SLD      ; 15863                       ;
+;     SCLR              ; 2783                        ;
+;     plain             ; 5                           ;
+; arriav_lcell_comb     ; 37238                       ;
+;     arith             ; 6615                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 343                         ;
+;         2 data inputs ; 6271                        ;
+;     normal            ; 1052                        ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 8                           ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 1022                        ;
+;     shared            ; 29571                       ;
+;         0 data inputs ; 49                          ;
+;         1 data inputs ; 158                         ;
+;         2 data inputs ; 22014                       ;
+;         3 data inputs ; 7350                        ;
+; boundary_port         ; 805                         ;
+;                       ;                             ;
+; Max LUT depth         ; 47.30                       ;
+; Average LUT depth     ; 22.71                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:32     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Sun Nov 26 15:41:53 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dct -c dct
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file bloque.v
+    Info (12023): Found entity 1: bloque File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dct8puntos.v
+    Info (12023): Found entity 1: dct8puntos File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dct16.v
+    Info (12023): Found entity 1: dct16 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dct32.v
+    Info (12023): Found entity 1: dct32 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_add8.v
+    Info (12023): Found entity 1: shift_add8 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_add16.v
+    Info (12023): Found entity 1: shift_add16 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shift_add32.v
+    Info (12023): Found entity 1: shift_add32 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file transpuesta.v
+    Info (12023): Found entity 1: transpuesta File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/transpuesta.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dct.v
+    Info (12023): Found entity 1: dct File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter.v
+    Info (12023): Found entity 1: counter File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fsm.v
+    Info (12023): Found entity 1: fsm File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dct_test.v
+    Info (12023): Found entity 1: dct_test File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct_test.v Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file scaling1.v
+    Info (12023): Found entity 1: scaling1 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file scaling2.v
+    Info (12023): Found entity 1: scaling2 File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling2.v Line: 1
+Info (12127): Elaborating entity "dct" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at dct.v(492): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 492
+Warning (10230): Verilog HDL assignment warning at dct.v(493): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 493
+Warning (10230): Verilog HDL assignment warning at dct.v(494): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 494
+Warning (10230): Verilog HDL assignment warning at dct.v(495): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 495
+Warning (10230): Verilog HDL assignment warning at dct.v(496): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 496
+Warning (10230): Verilog HDL assignment warning at dct.v(497): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 497
+Warning (10230): Verilog HDL assignment warning at dct.v(498): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 498
+Warning (10230): Verilog HDL assignment warning at dct.v(499): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 499
+Warning (10230): Verilog HDL assignment warning at dct.v(500): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 500
+Warning (10230): Verilog HDL assignment warning at dct.v(501): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 501
+Warning (10230): Verilog HDL assignment warning at dct.v(502): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 502
+Warning (10230): Verilog HDL assignment warning at dct.v(503): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 503
+Warning (10230): Verilog HDL assignment warning at dct.v(504): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 504
+Warning (10230): Verilog HDL assignment warning at dct.v(505): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 505
+Warning (10230): Verilog HDL assignment warning at dct.v(506): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 506
+Warning (10230): Verilog HDL assignment warning at dct.v(507): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 507
+Warning (10230): Verilog HDL assignment warning at dct.v(508): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 508
+Warning (10230): Verilog HDL assignment warning at dct.v(509): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 509
+Warning (10230): Verilog HDL assignment warning at dct.v(510): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 510
+Warning (10230): Verilog HDL assignment warning at dct.v(511): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 511
+Warning (10230): Verilog HDL assignment warning at dct.v(512): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 512
+Warning (10230): Verilog HDL assignment warning at dct.v(513): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 513
+Warning (10230): Verilog HDL assignment warning at dct.v(514): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 514
+Warning (10230): Verilog HDL assignment warning at dct.v(515): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 515
+Warning (10230): Verilog HDL assignment warning at dct.v(516): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 516
+Warning (10230): Verilog HDL assignment warning at dct.v(517): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 517
+Warning (10230): Verilog HDL assignment warning at dct.v(518): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 518
+Warning (10230): Verilog HDL assignment warning at dct.v(519): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 519
+Warning (10230): Verilog HDL assignment warning at dct.v(520): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 520
+Warning (10230): Verilog HDL assignment warning at dct.v(521): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 521
+Warning (10230): Verilog HDL assignment warning at dct.v(522): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 522
+Warning (10230): Verilog HDL assignment warning at dct.v(523): truncated value with size 28 to match size of target (16) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 523
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 109
+Info (12128): Elaborating entity "counter" for hierarchy "fsm:fsm1|counter:counter1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/fsm.v Line: 41
+Warning (10230): Verilog HDL assignment warning at counter.v(17): truncated value with size 32 to match size of target (8) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/counter.v Line: 17
+Info (12128): Elaborating entity "dct32" for hierarchy "dct32:dct32_etapa1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 186
+Info (12128): Elaborating entity "dct16" for hierarchy "dct32:dct32_etapa1|dct16:dct16_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v Line: 221
+Info (12128): Elaborating entity "dct8puntos" for hierarchy "dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v Line: 132
+Info (12128): Elaborating entity "bloque" for hierarchy "dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v Line: 75
+Warning (10230): Verilog HDL assignment warning at bloque.v(78): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 78
+Warning (10230): Verilog HDL assignment warning at bloque.v(79): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 79
+Warning (10230): Verilog HDL assignment warning at bloque.v(80): truncated value with size 26 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 80
+Warning (10230): Verilog HDL assignment warning at bloque.v(81): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 81
+Warning (10230): Verilog HDL assignment warning at bloque.v(82): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 82
+Warning (10230): Verilog HDL assignment warning at bloque.v(83): truncated value with size 26 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 83
+Info (12128): Elaborating entity "shift_add8" for hierarchy "dct32:dct32_etapa1|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v Line: 147
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(39): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 39
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(40): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 40
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(41): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 41
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(42): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 42
+Info (12128): Elaborating entity "shift_add16" for hierarchy "dct32:dct32_etapa1|dct16:dct16_1|shift_add16:shift_add16_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v Line: 256
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(61): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 61
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(62): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 62
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(63): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 63
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(64): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 64
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(65): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 65
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(66): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 66
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(67): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 67
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(68): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 68
+Info (12128): Elaborating entity "shift_add32" for hierarchy "dct32:dct32_etapa1|shift_add32:shift_add32_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v Line: 443
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(101): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 101
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(103): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 103
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(105): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 105
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(107): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 107
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(109): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 109
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(111): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 111
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(113): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 113
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(115): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 115
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(117): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 117
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(119): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 119
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(121): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 121
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(123): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 123
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(125): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 125
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(127): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 127
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(129): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 129
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(131): truncated value with size 27 to match size of target (21) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 131
+Info (12128): Elaborating entity "scaling1" for hierarchy "scaling1:st1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 259
+Warning (10036): Verilog HDL or VHDL warning at scaling1.v(77): object "tempIn" assigned a value but never read File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling1.v Line: 77
+Info (12128): Elaborating entity "transpuesta" for hierarchy "transpuesta:transpuesta0" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 338
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "temp_next" into its bus
+Info (12128): Elaborating entity "dct32" for hierarchy "dct32:dct32_etapa2" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 415
+Info (12128): Elaborating entity "dct16" for hierarchy "dct32:dct32_etapa2|dct16:dct16_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v Line: 221
+Info (12128): Elaborating entity "dct8puntos" for hierarchy "dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v Line: 132
+Info (12128): Elaborating entity "bloque" for hierarchy "dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|bloque:dct4puntos_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v Line: 75
+Warning (10230): Verilog HDL assignment warning at bloque.v(78): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 78
+Warning (10230): Verilog HDL assignment warning at bloque.v(79): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 79
+Warning (10230): Verilog HDL assignment warning at bloque.v(80): truncated value with size 33 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 80
+Warning (10230): Verilog HDL assignment warning at bloque.v(81): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 81
+Warning (10230): Verilog HDL assignment warning at bloque.v(82): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 82
+Warning (10230): Verilog HDL assignment warning at bloque.v(83): truncated value with size 33 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/bloque.v Line: 83
+Info (12128): Elaborating entity "shift_add8" for hierarchy "dct32:dct32_etapa2|dct16:dct16_1|dct8puntos:dct8puntos_1|shift_add8:shift_add8_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct8puntos.v Line: 147
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(39): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 39
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(40): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 40
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(41): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 41
+Warning (10230): Verilog HDL assignment warning at shift_add8.v(42): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add8.v Line: 42
+Info (12128): Elaborating entity "shift_add16" for hierarchy "dct32:dct32_etapa2|dct16:dct16_1|shift_add16:shift_add16_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct16.v Line: 256
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(61): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 61
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(62): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 62
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(63): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 63
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(64): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 64
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(65): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 65
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(66): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 66
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(67): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 67
+Warning (10230): Verilog HDL assignment warning at shift_add16.v(68): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add16.v Line: 68
+Info (12128): Elaborating entity "shift_add32" for hierarchy "dct32:dct32_etapa2|shift_add32:shift_add32_1" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct32.v Line: 443
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(101): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 101
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(103): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 103
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(105): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 105
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(107): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 107
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(109): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 109
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(111): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 111
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(113): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 113
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(115): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 115
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(117): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 117
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(119): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 119
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(121): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 121
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(123): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 123
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(125): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 125
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(127): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 127
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(129): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 129
+Warning (10230): Verilog HDL assignment warning at shift_add32.v(131): truncated value with size 34 to match size of target (28) File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/shift_add32.v Line: 131
+Info (12128): Elaborating entity "scaling2" for hierarchy "scaling2:st2" File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/dct.v Line: 489
+Warning (10036): Verilog HDL or VHDL warning at scaling2.v(77): object "tempIn" assigned a value but never read File: C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/scaling2.v Line: 77
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 14 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/output_files/dct.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 55503 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 293 input pins
+    Info (21059): Implemented 512 output pins
+    Info (21061): Implemented 54698 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 105 warnings
+    Info: Peak virtual memory: 1129 megabytes
+    Info: Processing ended: Sun Nov 26 15:42:57 2017
+    Info: Elapsed time: 00:01:04
+    Info: Total CPU time (on all processors): 00:01:23
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/DCT/output_files/dct.map.smsg.
+
+

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/simulation/modelsim
+vtranspuesta
+Z1 !s110 1511542967
+!i10b 1
+!s100 zIWAJ_:c]d8[kQ[oS^KM=2
+IG[AaNGg[inm?KXc>mzKk_0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1511542046
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1511542967.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta
+Z7 tCvgOpt 0
+vtranspuesta_test
+R1
+!i10b 1
+!s100 NUS5MXJ4LjDLUCMG`m7PK3
+IUQXg]nWX:CS2Kkll8Ub6d3
+R2
+R0
+w1511542959
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta_test.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta_test.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov16_2/transpuesta/transpuesta_test.v|
+!i113 1
+R5
+R6
+R7

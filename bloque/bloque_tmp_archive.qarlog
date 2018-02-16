@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/Users/Usuario/Documents/Tesis/codigo/bloque/bloque_tmp_archive.qarlog
+
+Archive:	C:/Users/Usuario/Documents/Tesis/codigo/bloque/bloque_tmp_archive.qar
+Date:		Sun Oct 15 22:24:48 2017
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Usuario/Documents/Tesis/codigo/bloque/bloque.qpf
+C:/Users/Usuario/Documents/Tesis/codigo/bloque/bloque.qsf
+C:/Users/Usuario/Documents/Tesis/codigo/bloque/bloque.v
+C:/Users/Usuario/Documents/Tesis/codigo/bloque/bloque_test.v
+c:/intelfpga_lite/17.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Oct 15 22:24:50 2017
+Source archive file:	C:/Users/Usuario/Documents/Tesis/codigo/bloque/bloque_tmp_archive.qar
+Archive was extracted into	C:/Users/Usuario/Documents/Tesis/codigo/bloques/
+		 - successfully.

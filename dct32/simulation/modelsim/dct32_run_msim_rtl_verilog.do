@@ -1,0 +1,23 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct8puntos.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add8.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add32.v}
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/bloque.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32 {C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32_test.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  dct32_test
+
+add wave *
+view structure
+view signals
+run -all

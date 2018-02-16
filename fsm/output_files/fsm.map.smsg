@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at fsm.v(7): object "load_trans" differs only in case from object "LOAD_TRANS" in the same scope File: C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/fsm/fsm.v Line: 7
+Info (10281): Verilog HDL Declaration information at fsm.v(8): object "unload_trans" differs only in case from object "UNLOAD_TRANS" in the same scope File: C:/Users/Usuario/Documents/Tesis/codigo/Nov16_2/fsm/fsm.v Line: 8

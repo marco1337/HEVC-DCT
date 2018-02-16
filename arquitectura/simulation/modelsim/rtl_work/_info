@@ -1,0 +1,406 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/simulation/modelsim
+varquitectura
+Z1 !s110 1511716278
+!i10b 1
+!s100 ;=l:bT@a^^k7_^KM?_YUD2
+IFTTTg]Ia5QVSBFQ:^7XNB2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1511716167
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1511716278.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura
+Z7 tCvgOpt 0
+varquitectura_test
+Z8 !s110 1511716281
+!i10b 1
+!s100 hZeLoNUA>63jn?ja>HZ4>2
+IlE6O9d^d@VZ6o`_RVH4Po2
+R2
+R0
+w1511714590
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura_test.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura_test.v
+L0 29
+R3
+r1
+!s85 0
+31
+Z9 !s108 1511716281.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/arquitectura_test.v|
+!i113 1
+R5
+R6
+R7
+vbloque
+R1
+!i10b 1
+!s100 _c^I4IY@LcJTnfho1eFAK2
+IkiRULMODD;GIPG98_VlnB1
+R2
+R0
+w1510774606
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/bloque.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/bloque.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/bloque.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/bloque.v|
+!i113 1
+R5
+R6
+R7
+vcounter
+Z10 !s110 1511716279
+!i10b 1
+!s100 0S4<P=f2^GQBj?zo_HTz>2
+I:4hLk<Xc>OdMj=NJ<5Uhb2
+R2
+R0
+w1510873596
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/counter.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z11 !s108 1511716279.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/counter.v|
+!i113 1
+R5
+R6
+R7
+vdct16
+R10
+!i10b 1
+!s100 h@4b7@`V7aWGnKk0c=l6_0
+IBYZ8ogl8PoX33g]MD8CAl0
+R2
+R0
+w1510774580
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct16.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct16.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct16.v|
+!i113 1
+R5
+R6
+R7
+vdct32
+R10
+!i10b 1
+!s100 h0AR`EdCcCa=iAdRmAe@11
+I:<@jOGiYl;aa3]@P_jO1F1
+R2
+R0
+w1510774562
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct32.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct32.v|
+!i113 1
+R5
+R6
+R7
+vdct8puntos
+R10
+!i10b 1
+!s100 `O_@L?TDK;U_;bU^S8Za=2
+Ilj8S?9kUYABXDbzKzJ<PV1
+R2
+R0
+w1510774674
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct8puntos.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct8puntos.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct8puntos.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/dct8puntos.v|
+!i113 1
+R5
+R6
+R7
+vfsm
+R10
+!i10b 1
+!s100 Ch4nA[K?zQ=?4RB75?3HF3
+I7lIcb5?80eAT6AN@7;aCP2
+R2
+R0
+w1511685843
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/fsm.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/fsm.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/fsm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/fsm.v|
+!i113 1
+R5
+R6
+R7
+vidct16
+Z12 !s110 1511716280
+!i10b 1
+!s100 JP2EfhO0B;9JYDIF46SWS0
+IPfNbd1liDl0`QBG[76TO31
+R2
+R0
+w1511387496
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct16.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct16.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z13 !s108 1511716280.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct16.v|
+!i113 1
+R5
+R6
+R7
+vidct32
+R12
+!i10b 1
+!s100 b``UK3i6=ZbIi00CA;F1C1
+I6nm8]o2CL48QDbnQFaJo43
+R2
+R0
+w1511680801
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct32.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct32.v|
+!i113 1
+R5
+R6
+R7
+vidct4
+R8
+!i10b 1
+!s100 3C=1BXH[N0>N6cYOcHLKK3
+IH4]0YO2T]lWbVW@N7E3fJ0
+R2
+R0
+w1511383444
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct4.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct4.v|
+!i113 1
+R5
+R6
+R7
+vidct8
+R12
+!i10b 1
+!s100 eP[UAnfFiBdl0AK[kzXRM3
+I>8M1`H[UB9onM6:9dR1TM1
+R2
+R0
+w1511385647
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct8.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/idct8.v|
+!i113 1
+R5
+R6
+R7
+vscaling1
+R10
+!i10b 1
+!s100 k:bn_jielFI6NCm?[gXGf1
+Ih[WG[3JW>9X;SXP5dfjgc0
+R2
+R0
+w1511713145
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling1.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling1.v|
+!i113 1
+R5
+R6
+R7
+vscaling2
+R10
+!i10b 1
+!s100 EQXJ^KBdDe7:Uo@;:fSV^0
+InV9JHDTS^Mn1Ofz[W^HG50
+R2
+R0
+w1511713143
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling2.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/scaling2.v|
+!i113 1
+R5
+R6
+R7
+vshift_add16
+R12
+!i10b 1
+!s100 ZSPInFfWIOPZ?TI=R;>D>0
+IkRFFmh_RBV=On7iozc=;]1
+R2
+R0
+w1510543250
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add16.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add16.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add16.v|
+!i113 1
+R5
+R6
+R7
+vshift_add32
+R12
+!i10b 1
+!s100 ?MKY4C=SAP35PCC=NIcDn2
+IkO?zzQ@25T7EWk`IEa_bn2
+R2
+R0
+w1510549010
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add32.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add32.v|
+!i113 1
+R5
+R6
+R7
+vshift_add8
+R12
+!i10b 1
+!s100 N:dObZXe47@k]e7^O:ToP1
+IeGnlh]YHhA8m^E@NjUd`J0
+R2
+R0
+w1510521938
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add8.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/shift_add8.v|
+!i113 1
+R5
+R6
+R7
+vtranspuesta
+R12
+!i10b 1
+!s100 44]M`PLaYm5Ta>f;JW8iB0
+IIzUH]OZ1HXdlGn1;LMO560
+R2
+R0
+w1510765880
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/transpuesta.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/transpuesta.v
+L0 1
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/transpuesta.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/arquitectura/transpuesta.v|
+!i113 1
+R5
+R6
+R7

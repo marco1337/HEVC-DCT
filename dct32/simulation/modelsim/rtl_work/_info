@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/simulation/modelsim
+vbloque
+Z1 !s110 1511750086
+!i10b 1
+!s100 gA6Fb``K@n1FgVA[n3KUU3
+IPGz=LdnMCNb@QHc[`<m3=3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1511742730
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/bloque.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/bloque.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1511750086.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/bloque.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/bloque.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32
+Z7 tCvgOpt 0
+vdct16
+Z8 !s110 1511750085
+!i10b 1
+!s100 `9eVb0UV4X9zAz>QKhobP0
+I>]3hKgdC2=0OT58G3THRG0
+R2
+R0
+w1511739617
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct16.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct16.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1511750085.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct16.v|
+!i113 1
+R5
+R6
+R7
+vdct32
+R8
+!i10b 1
+!s100 h0AR`EdCcCa=iAdRmAe@11
+I3M?ASnM[[SXIdMH]B5eNa3
+R2
+R0
+w1511744667
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1511750084.000000
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32.v|
+!i113 1
+R5
+R6
+R7
+vdct32_test
+R1
+!i10b 1
+!s100 zahGLl3HdLj^a2^Y78QNF1
+I^KL^_6z<2:>iKgjP2SFJ<0
+R2
+R0
+w1511750070
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32_test.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32_test.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct32_test.v|
+!i113 1
+R5
+R6
+R7
+vdct8puntos
+R8
+!i10b 1
+!s100 @mDK1^Xj1JLoB1=`DcS8A3
+I2T;U9L@F06B:7:_O3_4DU2
+R2
+R0
+w1511742331
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct8puntos.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct8puntos.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct8puntos.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/dct8puntos.v|
+!i113 1
+R5
+R6
+R7
+vshift_add16
+R8
+!i10b 1
+!s100 L`G@S2aI91eNF4@oNLbc50
+I_RdUlLdQofU=lCfhHU97G0
+R2
+R0
+w1511749376
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add16.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add16.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add16.v|
+!i113 1
+R5
+R6
+R7
+vshift_add32
+R8
+!i10b 1
+!s100 HJ1@Kzc]XHZ`enOhjHjn?3
+I37;X6S_g7Q4f]I?[@ReV[2
+R2
+R0
+w1511749048
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add32.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add32.v|
+!i113 1
+R5
+R6
+R7
+vshift_add8
+R8
+!i10b 1
+!s100 2X5Ib_Jc>b0lc:@c?]j<A1
+I31hoFD]LE6BVX_E_9B16W3
+R2
+R0
+w1511749742
+8C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add8.v
+FC:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32|C:/Users/Usuario/Documents/Tesis/codigo/Nov18_sabado/Nov24_3/dct32/shift_add8.v|
+!i113 1
+R5
+R6
+R7
